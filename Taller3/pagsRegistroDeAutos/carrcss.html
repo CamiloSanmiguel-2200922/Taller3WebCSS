@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Autos - Diseño Simple</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    select, input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
 </head>
 <body>
-    
+    <form action="#" method="POST">
+        <label for="id_coche">ID Coche:</label>
+        <input type="text" id="id_coche" name="id_coche" required>
+        
+        <label for="tipo_combustible">Tipo de Combustible:</label>
+        <select id="tipo_combustible" name="tipo_combustible" required>
+            <option value="">Seleccione...</option>
+            <option value="Gasolina">Gasolina</option>
+            <option value="Diésel">Diésel</option>
+            <option value="Eléctrico">Eléctrico</option>
+        </select>
+        
+        <label for="tipo_coche">Tipo de Coche:</label>
+        <select id="tipo_coche" name="tipo_coche" required>
+            <option value="">Seleccione...</option>
+            <option value="Sedán">Sedán</option>
+            <option value="SUV">SUV</option>
+            <option value="Pickup">Pickup</option>
+        </select>
+        
+        <label for="estado_coche">Estado de Coche:</label>
+        <select id="estado_coche" name="estado_coche" required>
+            <option value="">Seleccione...</option>
+            <option value="Nuevo">Nuevo</option>
+            <option value="Usado">Usado</option>
+        </select>
+        
+        <label for="marca_coche">Marca de Coche:</label>
+        <input type="text" id="marca_coche" name="marca_coche" required>
+        
+        <label for="id_usuario">ID Usuario:</label>
+        <input type="text" id="id_usuario" name="id_usuario" required>
+        
+        <label for="modelo_vehiculo">Modelo del Vehículo:</label>
+        <input type="text" id="modelo_vehiculo" name="modelo_vehiculo" required>
+        
+        <label for="ano">Año:</label>
+        <input type="text" id="ano" name="ano" required>
+        
+        <label for="caja">Caja:</label>
+        <input type="text" id="caja" name="caja" required>
+        
+        <label for="detalle">Detalle:</label>
+        <input type="text" id="detalle" name="detalle" required>
+        
+        <label for="motor">Motor:</label>
+        <input type="text" id="motor" name="motor" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        
+        <input type="submit" value="Registrar">
+    </form>
+    <div style="text-align: center; margin-top: 20px;">
+        <a type="summit" href="iniciar_sesion.html">Iniciar Sesión</a>
+    </div>
 </body>
 </html>
