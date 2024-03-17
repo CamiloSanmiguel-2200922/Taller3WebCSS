@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Autos - Bulma</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .field label {
+        font-weight: bold;
+    }
+    .submit-button {
+        margin-top: 20px;
+    }
+    #login-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #login-button a {
+        color: #3273dc;
+        font-weight: bold;
+    }
+    #login-button a:hover {
+        color: #0556f3;
+    }
+</style>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="field">
+                <label for="id_coche" class="label">ID Coche:</label>
+                <div class="control">
+                    <input type="text" id="id_coche" name="id_coche" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="tipo_combustible" class="label">Tipo de Combustible:</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="tipo_combustible" name="tipo_combustible" required>
+                            <option value="">Seleccione...</option>
+                            <option value="Gasolina">Gasolina</option>
+                            <option value="Diésel">Diésel</option>
+                            <option value="Eléctrico">Eléctrico</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="tipo_coche" class="label">Tipo de Coche:</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="tipo_coche" name="tipo_coche" required>
+                            <option value="">Seleccione...</option>
+                            <option value="Sedán">Sedán</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Pickup">Pickup</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="estado_coche" class="label">Estado de Coche:</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="estado_coche" name="estado_coche" required>
+                            <option value="">Seleccione...</option>
+                            <option value="Nuevo">Nuevo</option>
+                            <option value="Usado">Usado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="marca_coche" class="label">Marca de Coche:</label>
+                <div class="control">
+                    <input type="text" id="marca_coche" name="marca_coche" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="id_usuario" class="label">ID Usuario:</label>
+                <div class="control">
+                    <input type="text" id="id_usuario" name="id_usuario" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="modelo_vehiculo" class="label">Modelo del Vehículo:</label>
+                <div class="control">
+                    <input type="text" id="modelo_vehiculo" name="modelo_vehiculo" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="ano" class="label">Año:</label>
+                <div class="control">
+                    <input type="text" id="ano" name="ano" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="caja" class="label">Caja:</label>
+                <div class="control">
+                    <input type="text" id="caja" name="caja" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="detalle" class="label">Detalle:</label>
+                <div class="control">
+                    <input type="text" id="detalle" name="detalle" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="motor" class="label">Motor:</label>
+                <div class="control">
+                    <input type="text" id="motor" name="motor" class="input" required>
+                </div>
+            </div>
+            
+            <div class="field">
+                <label for="telefono" class="label">Teléfono:</label>
+                <div class="control">
+                    <input type="text" id="telefono" name="telefono" class="input" required>
+                </div>
+            </div>
+
+            <div class="field is-grouped submit-button">
+                <div class="control">
+                    <button class="button is-success">Registrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="login-button">
+        <a href="iniciar_sesion.html">Iniciar Sesión</a>
+    </div>
 </body>
 </html>
+
